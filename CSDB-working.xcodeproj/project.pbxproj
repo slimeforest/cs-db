@@ -14,9 +14,16 @@
 		C36B700A270CCD4000E641D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C36B7009270CCD4000E641D5 /* Assets.xcassets */; };
 		C36B700D270CCD4000E641D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36B700B270CCD4000E641D5 /* LaunchScreen.storyboard */; };
 		C36B7015270CF26C00E641D5 /* PlayerStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B7014270CF26C00E641D5 /* PlayerStatsViewController.swift */; };
+		C3B668B1270F789700161C21 /* PlayerRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B668B0270F789700161C21 /* PlayerRequestManager.swift */; };
+		C3B668B5270F825E00161C21 /* PlayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B668B4270F825E00161C21 /* PlayerData.swift */; };
+		C3B668B7270F8C4F00161C21 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B668B6270F8C4F00161C21 /* PlayerModel.swift */; };
+		CF004D2BDE9A0C14199AA6F0 /* Pods_CSDB_working.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89350A1EB1B2F2044BA3D963 /* Pods_CSDB_working.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5CE3AC107FCB93B453DA996A /* Pods-CSDB-working.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSDB-working.release.xcconfig"; path = "Target Support Files/Pods-CSDB-working/Pods-CSDB-working.release.xcconfig"; sourceTree = "<group>"; };
+		89350A1EB1B2F2044BA3D963 /* Pods_CSDB_working.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSDB_working.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C153697FB47A71D04AEEEAE9 /* Pods-CSDB-working.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSDB-working.debug.xcconfig"; path = "Target Support Files/Pods-CSDB-working/Pods-CSDB-working.debug.xcconfig"; sourceTree = "<group>"; };
 		C36B6FFD270CCD3D00E641D5 /* CSDB-working.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CSDB-working.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C36B7000270CCD3D00E641D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C36B7002270CCD3D00E641D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +33,9 @@
 		C36B700C270CCD4000E641D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C36B700E270CCD4000E641D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C36B7014270CF26C00E641D5 /* PlayerStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatsViewController.swift; sourceTree = "<group>"; };
+		C3B668B0270F789700161C21 /* PlayerRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRequestManager.swift; sourceTree = "<group>"; };
+		C3B668B4270F825E00161C21 /* PlayerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerData.swift; sourceTree = "<group>"; };
+		C3B668B6270F8C4F00161C21 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF004D2BDE9A0C14199AA6F0 /* Pods_CSDB_working.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A495A577E11F522011FA2AB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C153697FB47A71D04AEEEAE9 /* Pods-CSDB-working.debug.xcconfig */,
+				5CE3AC107FCB93B453DA996A /* Pods-CSDB-working.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C36B6FF4270CCD3D00E641D5 = {
 			isa = PBXGroup;
 			children = (
 				C36B6FFF270CCD3D00E641D5 /* CSDB-working */,
 				C36B6FFE270CCD3D00E641D5 /* Products */,
+				A495A577E11F522011FA2AB2 /* Pods */,
+				EC0EC0E16B658B67680750D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +80,51 @@
 		C36B6FFF270CCD3D00E641D5 /* CSDB-working */ = {
 			isa = PBXGroup;
 			children = (
+				C3B668AF270F787700161C21 /* Models */,
+				C3B668AE270F787100161C21 /* Views */,
+				C3B668AD270F786200161C21 /* Controllers */,
 				C36B7000270CCD3D00E641D5 /* AppDelegate.swift */,
 				C36B7002270CCD3D00E641D5 /* SceneDelegate.swift */,
-				C36B7004270CCD3D00E641D5 /* HomeViewController.swift */,
-				C36B7014270CF26C00E641D5 /* PlayerStatsViewController.swift */,
-				C36B7006270CCD3D00E641D5 /* Main.storyboard */,
 				C36B7009270CCD4000E641D5 /* Assets.xcassets */,
-				C36B700B270CCD4000E641D5 /* LaunchScreen.storyboard */,
 				C36B700E270CCD4000E641D5 /* Info.plist */,
 			);
 			path = "CSDB-working";
+			sourceTree = "<group>";
+		};
+		C3B668AD270F786200161C21 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C36B7004270CCD3D00E641D5 /* HomeViewController.swift */,
+				C36B7014270CF26C00E641D5 /* PlayerStatsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C3B668AE270F787100161C21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C36B7006270CCD3D00E641D5 /* Main.storyboard */,
+				C36B700B270CCD4000E641D5 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C3B668AF270F787700161C21 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3B668B0270F789700161C21 /* PlayerRequestManager.swift */,
+				C3B668B4270F825E00161C21 /* PlayerData.swift */,
+				C3B668B6270F8C4F00161C21 /* PlayerModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC0EC0E16B658B67680750D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89350A1EB1B2F2044BA3D963 /* Pods_CSDB_working.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C36B7011270CCD4000E641D5 /* Build configuration list for PBXNativeTarget "CSDB-working" */;
 			buildPhases = (
+				F7B9E73D77E5948DCE4CE257 /* [CP] Check Pods Manifest.lock */,
 				C36B6FF9270CCD3D00E641D5 /* Sources */,
 				C36B6FFA270CCD3D00E641D5 /* Frameworks */,
 				C36B6FFB270CCD3D00E641D5 /* Resources */,
+				C5F8EF6101E8D362366656EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,15 +195,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C5F8EF6101E8D362366656EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CSDB-working/Pods-CSDB-working-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CSDB-working/Pods-CSDB-working-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CSDB-working/Pods-CSDB-working-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7B9E73D77E5948DCE4CE257 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CSDB-working-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C36B6FF9270CCD3D00E641D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3B668B5270F825E00161C21 /* PlayerData.swift in Sources */,
 				C36B7005270CCD3D00E641D5 /* HomeViewController.swift in Sources */,
 				C36B7015270CF26C00E641D5 /* PlayerStatsViewController.swift in Sources */,
 				C36B7001270CCD3D00E641D5 /* AppDelegate.swift in Sources */,
 				C36B7003270CCD3D00E641D5 /* SceneDelegate.swift in Sources */,
+				C3B668B1270F789700161C21 /* PlayerRequestManager.swift in Sources */,
+				C3B668B7270F8C4F00161C21 /* PlayerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +392,7 @@
 		};
 		C36B7012270CCD4000E641D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C153697FB47A71D04AEEEAE9 /* Pods-CSDB-working.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,6 +421,7 @@
 		};
 		C36B7013270CCD4000E641D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CE3AC107FCB93B453DA996A /* Pods-CSDB-working.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

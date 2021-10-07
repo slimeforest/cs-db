@@ -9,17 +9,20 @@
 
 
 import UIKit
+import Alamofire
 
 class HomeViewController: UIViewController {
-
+    
+    let playerRequestManager = PlayerRequestManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+ 
     @IBAction func searchButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "searchToStats", sender: self)
+        playerRequestManager.fetchPlayerByName("jackonno78")
     }
-    
 }
+
 
