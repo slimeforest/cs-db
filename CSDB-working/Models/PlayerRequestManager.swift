@@ -11,6 +11,9 @@ import Alamofire
 struct PlayerRequestManager {
     let baseURL = "https://public-api.tracker.gg/v2/csgo/standard/profile/steam/"
     
+    let playerInfo = "player.data.platformInfo"
+    let playerStats = "player.data.segments[0].stats"
+    
     func fetchPlayerByName(_ playerName: String) {
         let headers : HTTPHeaders = [
             "TRN-Api-Key": "",
@@ -26,10 +29,11 @@ struct PlayerRequestManager {
             
             do{
                 let player = try JSONDecoder().decode(PlayerData.self, from: data)
-                print("player returned is: \(player.data.platformInfo.platformUserHandle)")
-                print("player's avatar url is: \(player.data.platformInfo.avatarUrl)")
-//                print("entire JSON object: \(player)")
-                print("players number of bombs defused: \(player.data.segments[0].stats.bombsPlanted.displayValue)")
+               
+                let playerObject = PlayerModel(playerUsername: player.data.platformInfo.platformUserHandle, playerUserID: player.data.platformInfo.platformUserId, avatarURL: player.data.platformInfo.avatarUrl, playerTimePlayed: player.data.segments[0].stats.timePlayed.displayValue, playerKills: player.data.segments[0].stats.kills.displayValue, playerDeaths: player.data.segments[0].stats.deaths.displayValue, playerKD: player.data.segments[0].stats.kd.displayValue, playerDamage: player.data.segments[0].stats.damage.displayValue, playerHeadshots: player.data.segments[0].stats.headshots.displayValue, playerShotsFired: player.data.segments[0].stats.shotsFired.displayValue, playerShotsHit: player.data.segments[0].stats.shotsHit.displayValue, playerShotsAccuracy: player.data.segments[0].stats.shotsAccuracy.displayValue, playerHeadshotPct: player.data.segments[0].stats.headshotPct.displayValue, playerMaychesPlayed: player.data.segments[0].stats.matchesPlayed.displayValue, playerWins: player.data.segments[0].stats.wins.displayValue, playerLosses: player.data.segments[0].stats.losses.displayValue, playerTies: player.data.segments[0].stats.ties.displayValue, playerMVPs: player.data.segments[0].stats.mvp.displayValue, playerMoneyEarned: player.data.segments[0].stats.moneyEarned.displayValue, playerBombsPlanted: player.data.segments[0].stats.bombsPlanted.displayValue, playerBombsDefused: player.data.segments[0].stats.bombsDefused.displayValue, playerHostagesRescued: player.data.segments[0].stats.hostagesRescued.displayValue, playerRoundsPlayed: player.data.segments[0].stats.roundsPlayed.displayValue, playerWLPercentage: player.data.segments[0].stats.wlPercentage.displayValue)
+                
+                print(playerObject.playerDamage)
+                
                 
             }catch {
                 print("error decoding: \(error)")
