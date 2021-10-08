@@ -60,7 +60,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="tEa-Sj-nUh" userLabel="Search Stack">
-                                                <rect key="frame" x="20" y="311" width="374" height="170"/>
+                                                <rect key="frame" x="20" y="311" width="374" height="265.33333333333326"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="243" translatesAutoresizingMaskIntoConstraints="NO" id="jHw-iR-eAb" userLabel="Textfield and Button Stack">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -86,10 +86,16 @@
                                                             <constraint firstItem="2pn-l1-OtL" firstAttribute="leading" secondItem="0CJ-yI-oVd" secondAttribute="trailing" constant="5" id="Ooo-ME-VpJ"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can search by a players Steam ID, Steam Community URL name, or Steam Vanity Username." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRn-Rg-IZy">
-                                                        <rect key="frame" x="0.0" y="109" width="374" height="61"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can search by Steam usernames or SteamIDs." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRn-Rg-IZy">
+                                                        <rect key="frame" x="0.0" y="109.00000000000001" width="374" height="40.666666666666671"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.78431372549019607" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Note: Your Steam account must be public to retrieve stats.*" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL0-3P-cgs">
+                                                        <rect key="frame" x="0.0" y="224.66666666666663" width="374" height="40.666666666666686"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="0.089820435680000005" blue="0.10038259319999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -98,10 +104,12 @@
                                                     <constraint firstAttribute="trailing" secondItem="jHw-iR-eAb" secondAttribute="trailing" id="T4Z-Hx-Cip"/>
                                                     <constraint firstItem="DRn-Rg-IZy" firstAttribute="top" secondItem="jHw-iR-eAb" secondAttribute="bottom" constant="5" id="YUw-Ll-gh0"/>
                                                     <constraint firstItem="jHw-iR-eAb" firstAttribute="leading" secondItem="tEa-Sj-nUh" secondAttribute="leading" id="ihn-1e-DlK"/>
+                                                    <constraint firstItem="cL0-3P-cgs" firstAttribute="top" secondItem="DRn-Rg-IZy" secondAttribute="bottom" constant="5" id="mLB-h4-IcB"/>
+                                                    <constraint firstItem="cL0-3P-cgs" firstAttribute="centerX" secondItem="tEa-Sj-nUh" secondAttribute="centerX" id="uee-Zk-nGo"/>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="92" translatesAutoresizingMaskIntoConstraints="NO" id="sxk-9g-IcO" userLabel="Extras Stack">
-                                                <rect key="frame" x="0.0" y="556" width="414" height="277"/>
+                                                <rect key="frame" x="0.0" y="651.33333333333337" width="414" height="400.00000000000011"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdy-8j-4kz" userLabel="Weapon Information">
                                                         <rect key="frame" x="130" y="0.0" width="154.33333333333337" height="31"/>
@@ -118,10 +126,16 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Counter-Strike.net"/>
                                                     </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s82-1e-0cJ">
+                                                        <rect key="frame" x="165.66666666666666" y="368.99999999999989" width="82.666666666666657" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="HLTV.org"/>
+                                                    </button>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="WjV-mi-nKB" firstAttribute="centerX" secondItem="sxk-9g-IcO" secondAttribute="centerX" id="FfR-PC-nqS"/>
                                                     <constraint firstItem="VIi-GJ-iPN" firstAttribute="centerX" secondItem="sxk-9g-IcO" secondAttribute="centerX" id="MJ4-5y-iiW"/>
+                                                    <constraint firstItem="s82-1e-0cJ" firstAttribute="centerX" secondItem="sxk-9g-IcO" secondAttribute="centerX" id="hlQ-0P-NzD"/>
                                                     <constraint firstItem="cdy-8j-4kz" firstAttribute="centerX" secondItem="sxk-9g-IcO" secondAttribute="centerX" id="vPg-GN-976"/>
                                                 </constraints>
                                             </stackView>
