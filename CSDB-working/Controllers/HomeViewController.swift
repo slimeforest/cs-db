@@ -10,6 +10,7 @@
 
 import UIKit
 import Alamofire
+import SafariServices
 
 class HomeViewController: UIViewController {
     
@@ -76,5 +77,23 @@ class HomeViewController: UIViewController {
             destinationVC.wlPct = retrievedPlayer!.playerWLPercentage
         }
     }
+    @IBAction func csNetPressed(_ sender: Any) {
+        print("counter-strike.net pressed")
+        if let csNetURL = URL(string: "https://www.counter-strike.net"){
+            
+            let safariVC = SFSafariViewController(url: csNetURL)
+            
+            present(safariVC, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func hltvPressed(_ sender: Any) {
+        print("HLTV button pressed")
+        if let hltvURL = URL(string: "https://www.hltv.org") {
+            let safariVC = SFSafariViewController(url: hltvURL)
+            present(safariVC, animated: true, completion: nil)
+        }
+    }
+    
 }
 
