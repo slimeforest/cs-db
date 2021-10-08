@@ -12,6 +12,7 @@ import UIKit
 import Alamofire
 
 class HomeViewController: UIViewController {
+    @IBOutlet weak var searchField: UITextField!
     
     let playerRequestManager = PlayerRequestManager()
     
@@ -21,7 +22,15 @@ class HomeViewController: UIViewController {
     }
  
     @IBAction func searchButtonPressed(_ sender: Any) {
-        playerRequestManager.fetchPlayerByName("jackonno78")
+        if searchField.text != nil {
+            let searchedName = searchField.text!
+            playerRequestManager.fetchPlayerByName("\(searchedName)")
+        }else if searchField.text == nil {
+            print("no name entered.")
+        }else {
+            print("unknown error")
+        }
+//        playerRequestManager.fetchPlayerByName("jackonno78")
     }
 }
 

@@ -163,6 +163,7 @@
                     <navigationItem key="navigationItem" id="Kvu-bK-LX7"/>
                     <size key="freeformSize" width="414" height="1200"/>
                     <connections>
+                        <outlet property="searchField" destination="0CJ-yI-oVd" id="ixG-ZU-SUk"/>
                         <segue destination="8n8-Hj-OPp" kind="show" identifier="searchToStats" id="dvk-sT-W87"/>
                     </connections>
                 </viewController>
@@ -709,6 +710,31 @@
                     </view>
                     <navigationItem key="navigationItem" id="k7g-RC-GKl"/>
                     <size key="freeformSize" width="414" height="2000"/>
+                    <connections>
+                        <outlet property="bombsDefusedLabel" destination="YqW-Hz-yLj" id="7U0-uh-Fh3"/>
+                        <outlet property="bombsPlantedLabel" destination="uZz-gB-0Rv" id="weZ-Ec-4Ny"/>
+                        <outlet property="damageLabel" destination="ni0-Bs-azc" id="pVr-UX-Jel"/>
+                        <outlet property="deathsLabel" destination="SeF-6y-h3X" id="xaS-sy-xKi"/>
+                        <outlet property="headshotKillsLabel" destination="wO0-Fi-vyr" id="nga-WT-2bb"/>
+                        <outlet property="headshotPctLabel" destination="VlL-4S-78I" id="9sv-Iv-eFO"/>
+                        <outlet property="hostagesRescuedLabel" destination="hvf-PA-fwh" id="GhV-IR-5f9"/>
+                        <outlet property="kdLabel" destination="Qh1-Kh-pth" id="Z7j-78-XbK"/>
+                        <outlet property="killsLabel" destination="CdX-1O-wms" id="f66-91-uDU"/>
+                        <outlet property="lossesLabel" destination="YQb-T6-KEX" id="Phl-3e-hMH"/>
+                        <outlet property="matchesPlayedLabel" destination="auZ-Lx-Zrr" id="Rup-fY-VmJ"/>
+                        <outlet property="moneyEarnedLabel" destination="saR-nl-sj7" id="cgO-Qf-W8u"/>
+                        <outlet property="mvpLabel" destination="VbY-tD-zlN" id="691-dy-PmG"/>
+                        <outlet property="profilePictureView" destination="dwB-wU-SJv" id="f79-dR-PTc"/>
+                        <outlet property="roundsPlayedLabel" destination="gSf-HI-dtn" id="pqV-od-puL"/>
+                        <outlet property="shotAccuracyLabel" destination="VOK-tm-D3p" id="fn0-0d-MZG"/>
+                        <outlet property="shotsFiredLabel" destination="qoA-5U-NlM" id="RSM-k5-hGN"/>
+                        <outlet property="shotsHitLabel" destination="Yts-Nx-Rdc" id="xzO-iK-Siw"/>
+                        <outlet property="tiesLabel" destination="4aY-FC-iSG" id="4uO-zz-b00"/>
+                        <outlet property="timePlayedLabel" destination="C8W-KS-Jyc" id="yVd-Pl-rwA"/>
+                        <outlet property="usernameLabel" destination="zCV-Lx-cC5" id="Abs-u9-Yvr"/>
+                        <outlet property="winsLabel" destination="rln-bd-4kV" id="9gb-6y-YrP"/>
+                        <outlet property="wlPctLabel" destination="1DO-ne-RXz" id="6lQ-eB-4sX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3B1-di-rUs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

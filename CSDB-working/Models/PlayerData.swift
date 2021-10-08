@@ -11,10 +11,10 @@ struct Data: Decodable {
 }
 
 struct PlatformInfo: Decodable {
-    let platformSlug: String
-    let platformUserId: String
-    let platformUserHandle: String
-    let avatarUrl: String
+    let platformSlug: String?
+    let platformUserId: String?
+    let platformUserHandle: String?
+    let avatarUrl: String?
 }
 
 struct Segments: Decodable {
@@ -47,132 +47,132 @@ struct Stats: Decodable {
 }
 
 struct TimePlayed: Decodable {
-    let percentile: Float
-    let value: Int
-    let displayValue: String
+    let percentile: Float?
+    let value: Int?
+    let displayValue: String?
 }
 
 struct Kills: Decodable {
-    let percentile: Float
-    let value: Int
-    let displayValue: String
+    let percentile: Float?
+    let value: Int?
+    let displayValue: String?
 }
 
 struct Deaths: Decodable {
-    let percentile: Float
-    let value: Int
-    let displayValue: String
+    let percentile: Float?
+    let value: Int?
+    let displayValue: String?
 }
 
 struct KillDeath: Decodable {
-    let percentile: Float
-    let value: Float
-    let displayValue: String
+    let percentile: Float?
+    let value: Float?
+    let displayValue: String?
 }
 
 struct Damage: Decodable {
-    let percentile: Float
-    let value: Int
-    let displayValue: String
+    let percentile: Float?
+    let value: Int?
+    let displayValue: String?
 }
 
 struct Headshots: Decodable {
-    let percentile: Float
-    let value: Int
-    let displayValue: String
+    let percentile: Float?
+    let value: Int?
+    let displayValue: String?
 }
 
 struct ShotsFired: Decodable {
-    let percentile: Float
-    let value: Int
-    let displayValue: String
+    let percentile: Float?
+    let value: Int?
+    let displayValue: String?
 }
 
 struct ShotsHit: Decodable {
-    let percentile: Float
-    let value: Int
-    let displayValue: String
+    let percentile: Float?
+    let value: Int?
+    let displayValue: String?
 }
 
 struct ShotsAccuracy: Decodable {
-    let percentile: Float
-    let value: Float
-    let displayValue: String
+    let percentile: Float?
+    let value: Float?
+    let displayValue: String?
 }
 
 struct BombsPlanted: Decodable {
-    let percentile: Float
-    let value: Int
-    let displayValue: String
+    let percentile: Float?
+    let value: Int?
+    let displayValue: String?
 }
 
 struct BombsDefused: Decodable {
-    let percentile: Float
-    let value: Int
-    let displayValue: String
+    let percentile: Float?
+    let value: Int?
+    let displayValue: String?
 }
 
 struct MoneyEarned: Decodable {
-    let percentile: Float
-    let value: Int
-    let displayValue: String
+    let percentile: Float?
+    let value: Int?
+    let displayValue: String?
 }
 
 struct HostagesRescued: Decodable {
-    let percentile: Float
-    let value: Int
-    let displayValue: String
+    let percentile: Float?
+    let value: Int?
+    let displayValue: String?
 }
 
 struct MVP: Decodable {
-    let percentile: Float
-    let value: Int
-    let displayValue: String
+    let percentile: Float?
+    let value: Int?
+    let displayValue: String?
 }
 
 struct Wins: Decodable {
-    let percentile: Float
-    let value: Int
-    let displayValue: String
+    let percentile: Float?
+    let value: Int?
+    let displayValue: String?
 }
 
 struct Ties: Decodable {
-    let value: Int
-    let displayValue: String
+    let value: Int?
+    let displayValue: String?
 }
 
 struct MatchesPlayed: Decodable {
-    let percentile: Float
-    let value: Int
-    let displayValue: String
+    let percentile: Float?
+    let value: Int?
+    let displayValue: String?
 }
 
 struct Losses: Decodable {
-    let percentile: Float
-    let value: Int
-    let displayValue: String
+    let percentile: Float?
+    let value: Int?
+    let displayValue: String?
 }
 
 struct RoundsPlayed: Decodable {
-    let percentile: Float
-    let value: Int
-    let displayValue: String
+    let percentile: Float?
+    let value: Int?
+    let displayValue: String?
 }
 
 struct RoundsWon: Decodable {
-    let percentile: Float
-    let value: Int
-    let displayValue: String
+    let percentile: Float?
+    let value: Int?
+    let displayValue: String?
 }
 
 struct WLPercentage: Decodable {
-    let percentile: Float
-    let value: Float
-    let displayValue: String
+    let percentile: Float?
+    let value: Float?
+    let displayValue: String?
 }
 
 struct HeadshotPct: Decodable {
-    let percentile: Float
-    let value: Float
-    let displayValue: String
+    let percentile: Float?
+    let value: Float?
+    let displayValue: String?
 }
