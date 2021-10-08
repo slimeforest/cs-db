@@ -8,5 +8,5 @@ target 'CSDB-working' do
   # Pods for CSDB-working
 pod 'Alamofire', '~> 5.4'
 pod 'SwiftyJSON', '~> 4.0'
-
+pod 'Kingfisher', '~> 7.0'
 end

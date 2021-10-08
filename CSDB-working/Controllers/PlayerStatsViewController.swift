@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Kingfisher
 
 class PlayerStatsViewController: UIViewController {
     //MARK: - user info labels
@@ -69,7 +70,8 @@ class PlayerStatsViewController: UIViewController {
     
     override func viewDidLoad() {
         print("successfully loaded second VC")
-        
+        let displayedAvatarURL = URL(string: avatarURL)
+        profilePictureView.kf.setImage(with: displayedAvatarURL)
         usernameLabel?.text = username
         
         timePlayedLabel.text = timePlayed
