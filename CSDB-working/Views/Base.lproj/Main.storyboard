@@ -12,7 +12,7 @@
         <scene sceneID="tkm-gn-E1y">
             <objects>
                 <navigationController interfaceStyle="dark" id="Vm3-gT-2SC" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ush-U6-dQF">
+                    <navigationBar key="navigationBar" alpha="0.0" contentMode="scaleToFill" barStyle="blackTranslucent" id="ush-U6-dQF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -196,14 +196,14 @@
             <objects>
                 <viewController id="8n8-Hj-OPp" customClass="PlayerStatsViewController" customModule="CSDB_working" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gbl-RT-d4m">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqk-zB-JhJ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="1956"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="1556"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ir2-1U-pyf" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1600"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="d8s-4c-7LA" userLabel="Player Info Stack">
                                                 <rect key="frame" x="0.0" y="20" width="414" height="278"/>
@@ -223,9 +223,6 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="zCV-Lx-cC5" firstAttribute="top" secondItem="dwB-wU-SJv" secondAttribute="bottom" constant="5" id="VHq-Am-bMG"/>
-                                                </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="95" translatesAutoresizingMaskIntoConstraints="NO" id="6M8-xy-iJ5" userLabel="Extra Stats Stack">
                                                 <rect key="frame" x="20" y="323" width="374" height="48"/>
@@ -295,7 +292,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mqE-LP-AIA" userLabel="Matches Stack">
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mqE-LP-AIA" userLabel="Matches Stack">
                                                                 <rect key="frame" x="0.0" y="114.33333333333337" width="151.33333333333334" height="613.66666666666663"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hOz-50-PeX" userLabel="Matches Played Stack">
@@ -315,7 +312,7 @@
                                                                             </label>
                                                                         </subviews>
                                                                     </stackView>
-                                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="TiA-lh-OnG" userLabel="Wins Stack">
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="TiA-lh-OnG" userLabel="Wins Stack">
                                                                         <rect key="frame" x="10" y="135" width="72.333333333333329" height="71.333333333333314"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wins:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0t7-Tc-D8c">
@@ -332,8 +329,8 @@
                                                                             </label>
                                                                         </subviews>
                                                                     </stackView>
-                                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="dgP-HH-UlQ" userLabel="Losses Stack">
-                                                                        <rect key="frame" x="10" y="225.33333333333329" width="98" height="71.333333333333343"/>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="dgP-HH-UlQ" userLabel="Losses Stack">
+                                                                        <rect key="frame" x="10" y="225.33333333333323" width="98" height="71.666666666666657"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Losses:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2h0-A3-S7z">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="98" height="36"/>
@@ -342,14 +339,14 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,448" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQb-T6-KEX">
-                                                                                <rect key="frame" x="0.0" y="45" width="54.666666666666664" height="26.333333333333329"/>
+                                                                                <rect key="frame" x="0.0" y="45" width="54.666666666666664" height="26.666666666666671"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                         </subviews>
                                                                     </stackView>
-                                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Rzs-yh-G2t" userLabel="Ties Stack">
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Rzs-yh-G2t" userLabel="Ties Stack">
                                                                         <rect key="frame" x="9.9999999999999964" y="316" width="60.666666666666657" height="71.333333333333314"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ties:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFk-Ft-Mj1">
@@ -366,7 +363,7 @@
                                                                             </label>
                                                                         </subviews>
                                                                     </stackView>
-                                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="fuL-k0-8pL" userLabel="MVPs Stack">
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="fuL-k0-8pL" userLabel="MVPs Stack">
                                                                         <rect key="frame" x="10" y="406.33333333333326" width="83" height="71.333333333333314"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MVPs:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PR3-cR-6vz">
@@ -383,7 +380,7 @@
                                                                             </label>
                                                                         </subviews>
                                                                     </stackView>
-                                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="C7z-ty-x2u" userLabel="Money Earned Stack">
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="C7z-ty-x2u" userLabel="Money Earned Stack">
                                                                         <rect key="frame" x="10" y="496.66666666666663" width="131.33333333333334" height="107"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Money Earned:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWm-h7-Udw">
@@ -402,6 +399,10 @@
                                                                     </stackView>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.12156862745098039" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="dgP-HH-UlQ" firstAttribute="top" secondItem="mqE-LP-AIA" secondAttribute="top" constant="225.33333333333326" id="BYX-wI-lPm"/>
+                                                                    <constraint firstItem="Rzs-yh-G2t" firstAttribute="top" secondItem="mqE-LP-AIA" secondAttribute="top" constant="316" id="ZXz-Iw-LA0"/>
+                                                                </constraints>
                                                                 <edgeInsets key="layoutMargins" top="10" left="10" bottom="10" right="10"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -409,8 +410,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2Gq-Rs-DHa" userLabel="Objectives Stack">
-                                                                <rect key="frame" x="0.0" y="753" width="150.33333333333334" height="391"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2Gq-Rs-DHa" userLabel="Objectives Stack">
+                                                                <rect key="frame" x="0.0" y="753" width="151.33333333333334" height="391"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6iw-sv-Z7i" userLabel="Bomb Plants Stack">
                                                                         <rect key="frame" x="10" y="10" width="104.66666666666667" height="118"/>
@@ -429,10 +430,10 @@
                                                                             </label>
                                                                         </subviews>
                                                                     </stackView>
-                                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RLX-6w-jPm" userLabel="Bomb Defuses Stack">
-                                                                        <rect key="frame" x="9.9999999999999929" y="136" width="116.33333333333331" height="118"/>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RLX-6w-jPm" userLabel="Bomb Defuses Stack">
+                                                                        <rect key="frame" x="9.9999999999999929" y="137.33333333333326" width="116.33333333333331" height="118"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bombs Defused:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhq-0E-XN7">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Bombs Defused:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhq-0E-XN7">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="116.33333333333333" height="71.666666666666671"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                                                 <color key="textColor" systemColor="systemPurpleColor"/>
@@ -446,17 +447,17 @@
                                                                             </label>
                                                                         </subviews>
                                                                     </stackView>
-                                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="do1-2D-93O" userLabel="Hostages Rescued Stack">
-                                                                        <rect key="frame" x="10" y="262" width="130.33333333333334" height="119"/>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="do1-2D-93O" userLabel="Hostages Rescued Stack">
+                                                                        <rect key="frame" x="10" y="264.33333333333326" width="126" height="116.66666666666669"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hostages Rescued:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdz-2h-Fhf">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="130.33333333333334" height="71.666666666666671"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hostgaes Rescued:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdV-I8-G94">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="126" height="69.333333333333329"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                                                                 <color key="textColor" systemColor="systemPurpleColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvf-PA-fwh">
-                                                                                <rect key="frame" x="0.0" y="92.666666666666742" width="130.33333333333334" height="26.333333333333329"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvf-PA-fwh">
+                                                                                <rect key="frame" x="0.0" y="90.333333333333485" width="126" height="26.333333333333329"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
@@ -474,8 +475,8 @@
                                                             </stackView>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstItem="2Gq-Rs-DHa" firstAttribute="top" secondItem="mqE-LP-AIA" secondAttribute="bottom" constant="50" id="JHF-zn-hKm"/>
-                                                            <constraint firstItem="mqE-LP-AIA" firstAttribute="top" secondItem="HxS-xS-0CN" secondAttribute="bottom" constant="50" id="aVN-4U-nGQ"/>
+                                                            <constraint firstItem="2Gq-Rs-DHa" firstAttribute="top" secondItem="iI6-jw-n2E" secondAttribute="top" constant="753" id="LbM-Sf-tbO"/>
+                                                            <constraint firstItem="mqE-LP-AIA" firstAttribute="centerX" secondItem="2Gq-Rs-DHa" secondAttribute="centerX" id="vdy-rk-4Og"/>
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="oMV-4K-9uF" userLabel="Right Stack">
@@ -705,10 +706,6 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </stackView>
                                                         </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="2eA-cw-Xx1" firstAttribute="top" secondItem="KdR-zj-H4z" secondAttribute="bottom" constant="50" id="8aU-1c-bTD"/>
-                                                            <constraint firstItem="KdR-zj-H4z" firstAttribute="top" secondItem="Gwj-Bp-17N" secondAttribute="bottom" constant="50" id="z5e-Wz-fgr"/>
-                                                        </constraints>
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
@@ -724,7 +721,7 @@
                                             <constraint firstItem="6M8-xy-iJ5" firstAttribute="top" secondItem="d8s-4c-7LA" secondAttribute="bottom" constant="25" id="hHn-yj-ff2"/>
                                             <constraint firstItem="aFh-ql-B4F" firstAttribute="leading" secondItem="Ir2-1U-pyf" secondAttribute="leading" constant="20" id="nMa-4O-hhw"/>
                                             <constraint firstAttribute="trailing" secondItem="aFh-ql-B4F" secondAttribute="trailing" constant="20" id="qG9-wP-d1T"/>
-                                            <constraint firstAttribute="height" constant="2000" id="s8G-Ce-Ykc"/>
+                                            <constraint firstAttribute="height" constant="1600" id="s8G-Ce-Ykc"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -747,7 +744,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="k7g-RC-GKl"/>
-                    <size key="freeformSize" width="414" height="2000"/>
+                    <size key="freeformSize" width="414" height="1600"/>
                     <connections>
                         <outlet property="bombsDefusedLabel" destination="YqW-Hz-yLj" id="7U0-uh-Fh3"/>
                         <outlet property="bombsPlantedLabel" destination="uZz-gB-0Rv" id="weZ-Ec-4Ny"/>
