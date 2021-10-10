@@ -232,13 +232,31 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMu-xS-cK4">
                                                         <rect key="frame" x="0.0" y="0.0" width="139.66666666666666" height="48"/>
+                                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="View Weapon Stats"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="View Weapon Stats" buttonSize="medium">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACd-MF-yda">
                                                         <rect key="frame" x="234.66666666666663" y="0.0" width="139.33333333333337" height="48"/>
+                                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="View map stats"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="View Map Stats" buttonSize="medium">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -460,11 +478,11 @@
                                                             <constraint firstItem="mqE-LP-AIA" firstAttribute="top" secondItem="HxS-xS-0CN" secondAttribute="bottom" constant="50" id="aVN-4U-nGQ"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="oMV-4K-9uF" userLabel="Right Stack">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="oMV-4K-9uF" userLabel="Right Stack">
                                                         <rect key="frame" x="187" y="0.0" width="187" height="1144"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Gwj-Bp-17N" userLabel="Kill/Death Stack">
-                                                                <rect key="frame" x="25.666666666666657" y="0.0" width="135.66666666666666" height="325.33333333333331"/>
+                                                                <rect key="frame" x="51.333333333333314" y="0.0" width="135.66666666666666" height="325.33333333333331"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FOy-8O-9WS" userLabel="Kills Stack">
                                                                         <rect key="frame" x="10" y="10" width="66.333333333333329" height="70.333333333333329"/>
@@ -544,7 +562,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KdR-zj-H4z" userLabel="Accuracy Stack">
-                                                                <rect key="frame" x="7" y="350.33333333333343" width="173.33333333333334" height="528.66666666666652"/>
+                                                                <rect key="frame" x="13.666666666666657" y="350.33333333333343" width="173.33333333333334" height="528.66666666666652"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="DcK-MG-8Wn" userLabel="Headshots Kills Stack">
                                                                         <rect key="frame" x="10" y="10" width="133" height="110"/>
@@ -641,7 +659,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2eA-cw-Xx1" userLabel="Rounds Stack">
-                                                                <rect key="frame" x="7" y="904" width="173.33333333333334" height="240"/>
+                                                                <rect key="frame" x="13.666666666666657" y="904" width="173.33333333333334" height="240"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="c1h-e6-cZY" userLabel="Rounds Played Stack">
                                                                         <rect key="frame" x="10" y="10" width="105" height="106"/>
