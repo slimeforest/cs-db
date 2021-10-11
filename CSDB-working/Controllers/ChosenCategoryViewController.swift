@@ -10,11 +10,11 @@ import UIKit
 
 
 class ChosenCategoryViewController: UITableViewController {
-    let pistols: [String] = ["USP-S","Glock", "deagle"]
-    let rifles: [String] = ["ak47","m4a4","aug"]
-    let smgs: [String] = ["p90", "bizon", "mac 10"]
-    let heavy: [String] = ["nova", "negev", "swag 7"]
-    let gear: [String] = ["Taser"]
+    let pistols: [String] = ["USP-S & P2000","Glock-18", "Desert Eagle", "Dual Berettas", "Five-SeveN", "Tec-9"]
+    let rifles: [String] = ["AK-47","M4A4 & M4A1-S","AWP","AUG","FAMAS","Galil AR","SG553", "SSG 08", "SCAR-20", "G3SG1"]
+    let smgs: [String] = ["Mac-10", "MP9", "P90", "PP-Bizon", "UMP-45", "MP7"]
+    let heavy: [String] = ["MAG-7", "Nova", "Sawed-Off", "XM1014", "Negev", "M249"]
+    let gear: [String] = ["Zeus x27"]
     
     var chosenCategory: [String] = []
     
