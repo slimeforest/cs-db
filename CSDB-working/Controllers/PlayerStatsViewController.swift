@@ -65,6 +65,9 @@ class PlayerStatsViewController: UIViewController {
     var wlPct: String = ""
     //MARK: - actual view controller stuff
     
+    @IBAction func viewWeaponsPressed(_ sender: Any) {
+        performSegue(withIdentifier: "playerToWeapons", sender: self)
+    }
     
     
     
