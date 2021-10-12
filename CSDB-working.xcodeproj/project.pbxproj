@@ -19,7 +19,6 @@
 		C3B668B7270F8C4F00161C21 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B668B6270F8C4F00161C21 /* PlayerModel.swift */; };
 		C3D015552714D02000A8BAC8 /* WeaponsStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D015542714D02000A8BAC8 /* WeaponsStatsViewController.swift */; };
 		C3D015592714E5F200A8BAC8 /* ChosenCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D015582714E5F200A8BAC8 /* ChosenCategoryViewController.swift */; };
-		C3D0155B2714E66800A8BAC8 /* WeaponsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D0155A2714E66800A8BAC8 /* WeaponsData.swift */; };
 		CF004D2BDE9A0C14199AA6F0 /* Pods_CSDB_working.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89350A1EB1B2F2044BA3D963 /* Pods_CSDB_working.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +40,6 @@
 		C3B668B6270F8C4F00161C21 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
 		C3D015542714D02000A8BAC8 /* WeaponsStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsStatsViewController.swift; sourceTree = "<group>"; };
 		C3D015582714E5F200A8BAC8 /* ChosenCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenCategoryViewController.swift; sourceTree = "<group>"; };
-		C3D0155A2714E66800A8BAC8 /* WeaponsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +121,6 @@
 				C3B668B0270F789700161C21 /* PlayerRequestManager.swift */,
 				C3B668B4270F825E00161C21 /* PlayerData.swift */,
 				C3B668B6270F8C4F00161C21 /* PlayerModel.swift */,
-				C3D0155A2714E66800A8BAC8 /* WeaponsData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -253,7 +250,6 @@
 			files = (
 				C3B668B5270F825E00161C21 /* PlayerData.swift in Sources */,
 				C36B7005270CCD3D00E641D5 /* HomeViewController.swift in Sources */,
-				C3D0155B2714E66800A8BAC8 /* WeaponsData.swift in Sources */,
 				C36B7015270CF26C00E641D5 /* PlayerStatsViewController.swift in Sources */,
 				C3D015592714E5F200A8BAC8 /* ChosenCategoryViewController.swift in Sources */,
 				C36B7001270CCD3D00E641D5 /* AppDelegate.swift in Sources */,

@@ -778,80 +778,15 @@
                         <outlet property="usernameLabel" destination="zCV-Lx-cC5" id="Abs-u9-Yvr"/>
                         <outlet property="winsLabel" destination="rln-bd-4kV" id="9gb-6y-YrP"/>
                         <outlet property="wlPctLabel" destination="1DO-ne-RXz" id="6lQ-eB-4sX"/>
-                        <segue destination="3Lz-68-eu9" kind="show" identifier="playerToWeapons" id="Lrr-DC-sz3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3B1-di-rUs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1424.6376811594205" y="182.60869565217394"/>
         </scene>
-        <!--Weapon Stats View Controller-->
-        <scene sceneID="CnC-2x-VCs">
-            <objects>
-                <tableViewController id="3Lz-68-eu9" customClass="WeaponStatsViewController" customModule="CSDB_working" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Wr4-gk-dv5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" id="iXf-8q-u2V">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iXf-8q-u2V" id="id1-si-bsn">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="3Lz-68-eu9" id="Zdc-0j-VWv"/>
-                            <outlet property="delegate" destination="3Lz-68-eu9" id="gc4-o7-jGF"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="gHI-Gh-msx"/>
-                    <connections>
-                        <segue destination="ej1-H4-E8i" kind="show" identifier="categoryToItems" id="7RC-Fy-3No"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Sli-VE-8GX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2717" y="183"/>
-        </scene>
-        <!--Chosen Category View Controller-->
-        <scene sceneID="cma-09-ClU">
-            <objects>
-                <tableViewController id="ej1-H4-E8i" customClass="ChosenCategoryViewController" customModule="CSDB_working" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="orN-eA-LXg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="weaponCell" id="16Q-aI-FFX">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="16Q-aI-FFX" id="kDp-0Z-gEa">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="ej1-H4-E8i" id="1GC-4x-4d1"/>
-                            <outlet property="delegate" destination="ej1-H4-E8i" id="BkJ-Eh-3Uo"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="4CF-3c-HVA"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Uc-xS-XjR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3624" y="185"/>
-        </scene>
     </scenes>
     <resources>
         <image name="cs pic" width="184" height="184"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
