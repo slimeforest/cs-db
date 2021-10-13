@@ -26,12 +26,15 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
     
     var retrievedPlayer: PlayerModel! {
         didSet{
-            self.performSegue(withIdentifier: "searchToStats", sender: self)
+            if retrievedPlayer.retrievedStatus != 200 {
+                    showAlert()
+            }else {
+                self.performSegue(withIdentifier: "searchToStats", sender: self)
+            }
         }
     }
     
-    var menu: SideMenuNavigationController?
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         menu = SideMenuNavigationController(rootViewController: SideMenuViewController())
@@ -101,6 +104,13 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    func showAlert() {
+        let alert = UIAlertController(title: "Player not found", message: "Make sure the profile is public or you are entering the correct SteamID.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        self.present(alert, animated: true)
+    }
+    
+    var menu: SideMenuNavigationController?
     @IBAction func menuPressed(_ sender: Any) {
         present(menu!, animated: true, completion: nil)
     }

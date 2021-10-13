@@ -8,6 +8,9 @@
 import Foundation
 
 struct PlayerModel {
+    
+    let retrievedStatus: Int
+    
     let playerUsername: String
     let playerUserID: String
     let avatarURL: String

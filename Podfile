@@ -10,4 +10,5 @@ pod 'Alamofire', '~> 5.4'
 pod 'Kingfisher', '~> 7.0'
 pod 'IQKeyboardManagerSwift'
 pod 'SideMenu', '~> 6.0'
+pod 'NVActivityIndicatorView'
 end
