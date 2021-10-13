@@ -14,6 +14,7 @@
 		C36B700A270CCD4000E641D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C36B7009270CCD4000E641D5 /* Assets.xcassets */; };
 		C36B700D270CCD4000E641D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36B700B270CCD4000E641D5 /* LaunchScreen.storyboard */; };
 		C36B7015270CF26C00E641D5 /* PlayerStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B7014270CF26C00E641D5 /* PlayerStatsViewController.swift */; };
+		C373CA022716A77F002E6877 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C373CA012716A77F002E6877 /* SideMenuViewController.swift */; };
 		C3B668B1270F789700161C21 /* PlayerRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B668B0270F789700161C21 /* PlayerRequestManager.swift */; };
 		C3B668B5270F825E00161C21 /* PlayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B668B4270F825E00161C21 /* PlayerData.swift */; };
 		C3B668B7270F8C4F00161C21 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B668B6270F8C4F00161C21 /* PlayerModel.swift */; };
@@ -35,6 +36,7 @@
 		C36B700C270CCD4000E641D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C36B700E270CCD4000E641D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C36B7014270CF26C00E641D5 /* PlayerStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatsViewController.swift; sourceTree = "<group>"; };
+		C373CA012716A77F002E6877 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		C3B668B0270F789700161C21 /* PlayerRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRequestManager.swift; sourceTree = "<group>"; };
 		C3B668B4270F825E00161C21 /* PlayerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerData.swift; sourceTree = "<group>"; };
 		C3B668B6270F8C4F00161C21 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				C36B7014270CF26C00E641D5 /* PlayerStatsViewController.swift */,
 				C3D015542714D02000A8BAC8 /* WeaponsStatsViewController.swift */,
 				C3D015582714E5F200A8BAC8 /* ChosenCategoryViewController.swift */,
+				C373CA012716A77F002E6877 /* SideMenuViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				C3D015552714D02000A8BAC8 /* WeaponsStatsViewController.swift in Sources */,
 				C36B7003270CCD3D00E641D5 /* SceneDelegate.swift in Sources */,
 				C3B668B1270F789700161C21 /* PlayerRequestManager.swift in Sources */,
+				C373CA022716A77F002E6877 /* SideMenuViewController.swift in Sources */,
 				C3B668B7270F8C4F00161C21 /* PlayerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,11 +28,11 @@
         <scene sceneID="udg-TN-Bco">
             <objects>
                 <viewController id="JeO-dm-bSu" customClass="HomeViewController" customModule="CSDB_working" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ms6-4v-xZz">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Ms6-4v-xZz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AtG-4g-OWw" userLabel="ContentView">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AtG-4g-OWw" userLabel="ContentView">
                                 <rect key="frame" x="0.0" y="44" width="414" height="1156"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sXg-Mi-eZI" userLabel="Name Stack">
@@ -97,13 +97,32 @@
                                             <constraint firstItem="cL0-3P-cgs" firstAttribute="centerX" secondItem="tEa-Sj-nUh" secondAttribute="centerX" id="uee-Zk-nGo"/>
                                         </constraints>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SAW-KB-qlD" userLabel="Info Stack">
+                                        <rect key="frame" x="91.000000000000014" y="1004.9999999999999" width="232.33333333333337" height="40.333333333333336"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by the Tracker.gg API" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23K-Ez-Vkb">
+                                                <rect key="frame" x="0.0" y="0.0" width="232.33333333333334" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app is not affiliated with Valve" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0y-vt-QAo">
+                                                <rect key="frame" x="0.0" y="28.333333333333258" width="232.33333333333334" height="12"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.082352941176470587" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="tEa-Sj-nUh" firstAttribute="leading" secondItem="AtG-4g-OWw" secondAttribute="leading" constant="20" id="04y-Ns-hiy"/>
                                     <constraint firstAttribute="trailing" secondItem="sXg-Mi-eZI" secondAttribute="trailing" id="1zA-6q-wFj"/>
                                     <constraint firstAttribute="trailing" secondItem="tEa-Sj-nUh" secondAttribute="trailing" constant="20" id="KI2-ag-6wx"/>
+                                    <constraint firstAttribute="bottom" secondItem="SAW-KB-qlD" secondAttribute="bottom" constant="5" id="OoX-Ae-OCV"/>
                                     <constraint firstAttribute="height" constant="1200" id="Sec-3O-bni"/>
+                                    <constraint firstItem="SAW-KB-qlD" firstAttribute="centerX" secondItem="AtG-4g-OWw" secondAttribute="centerX" id="lhf-vL-jIW"/>
                                     <constraint firstItem="tEa-Sj-nUh" firstAttribute="top" secondItem="sXg-Mi-eZI" secondAttribute="bottom" constant="125" id="sAO-V2-1oY"/>
                                     <constraint firstItem="sXg-Mi-eZI" firstAttribute="top" secondItem="AtG-4g-OWw" secondAttribute="top" id="sBR-P7-Gvx"/>
                                     <constraint firstItem="sXg-Mi-eZI" firstAttribute="leading" secondItem="AtG-4g-OWw" secondAttribute="leading" id="sBj-ap-SKw"/>
@@ -120,7 +139,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Kvu-bK-LX7">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="iab-nM-e2z">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" image="ellipsis" catalog="system" id="iab-nM-e2z">
                             <connections>
                                 <action selector="menuPressed:" destination="JeO-dm-bSu" id="Q4X-TN-Mge"/>
                             </connections>
@@ -726,6 +745,7 @@
     </scenes>
     <resources>
         <image name="cs pic" width="184" height="184"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -734,6 +754,9 @@
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
