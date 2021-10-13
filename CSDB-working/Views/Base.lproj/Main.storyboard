@@ -62,9 +62,10 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="243" translatesAutoresizingMaskIntoConstraints="NO" id="jHw-iR-eAb" userLabel="Textfield and Button Stack">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter SteamID or CommunityURL" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0CJ-yI-oVd">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter SteamID or CommunityURL" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="0CJ-yI-oVd">
                                                         <rect key="frame" x="0.0" y="0.0" width="62" height="34"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" red="1" green="0.090196078430000007" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -83,7 +84,7 @@
                                                     <constraint firstItem="2pn-l1-OtL" firstAttribute="leading" secondItem="0CJ-yI-oVd" secondAttribute="trailing" constant="5" id="Ooo-ME-VpJ"/>
                                                 </constraints>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Note: Your Steam account must be public to retrieve stats.*" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL0-3P-cgs">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note: Your Steam account must be public to retrieve stats." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL0-3P-cgs">
                                                 <rect key="frame" x="0.0" y="109.00000000000001" width="374" height="40.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" systemColor="systemYellowColor"/>
@@ -98,7 +99,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SAW-KB-qlD" userLabel="Info Stack">
-                                        <rect key="frame" x="91.000000000000014" y="1004.9999999999999" width="232.33333333333337" height="40.333333333333336"/>
+                                        <rect key="frame" x="91.000000000000014" y="1110.666666666667" width="232.33333333333337" height="40.333333333333336"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by the Tracker.gg API" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23K-Ez-Vkb">
                                                 <rect key="frame" x="0.0" y="0.0" width="232.33333333333334" height="20.333333333333332"/>
@@ -140,6 +141,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Kvu-bK-LX7">
                         <barButtonItem key="leftBarButtonItem" title="Menu" image="ellipsis" catalog="system" id="iab-nM-e2z">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="menuPressed:" destination="JeO-dm-bSu" id="Q4X-TN-Mge"/>
                             </connections>

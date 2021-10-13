@@ -10,16 +10,15 @@
 
 import UIKit
 import Alamofire
-import SafariServices
 import SideMenu
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITextFieldDelegate {
     
     var playerRequestManager = PlayerRequestManager()
     
     @IBOutlet weak var searchField: UITextField! {
         didSet{
-            let placeholderText = NSAttributedString(string: "Enter SteamID or CommunityURL", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
+            let placeholderText = NSAttributedString(string: "Enter SteamID or Steam Username", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
             
             searchField.attributedPlaceholder = placeholderText
         }
@@ -39,11 +38,13 @@ class HomeViewController: UIViewController {
         menu?.leftSide = true
         menu?.setNavigationBarHidden(false, animated: false)
         
-        
         SideMenuManager.default.leftMenuNavigationController = menu
         SideMenuManager.default.addPanGestureToPresent(toView: self.view)
-        // Do any additional setup after loading the view.
+        
+        self.searchField.delegate = self
+        
     }
+    
     
     @IBAction func searchButtonPressed(_ sender: Any) {
         if searchField.text != nil {
@@ -57,6 +58,11 @@ class HomeViewController: UIViewController {
         }else {
             print("unknown error")
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        searchButtonPressed((Any).self)
+        return true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

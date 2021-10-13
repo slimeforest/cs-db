@@ -29,7 +29,7 @@ class SideMenuViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = items[indexPath.row]
         cell.backgroundColor = darkColor
-        cell.textLabel?.textColor = .white
+        cell.textLabel?.textColor = .link
         return cell
     }
     
