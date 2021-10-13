@@ -56,6 +56,7 @@ class HomeViewController: UIViewController {
             destinationVC.username = retrievedPlayer!.playerUsername
             destinationVC.avatarURL = retrievedPlayer!.avatarURL
             destinationVC.timePlayed = retrievedPlayer!.playerTimePlayed
+            destinationVC.userID = retrievedPlayer.playerUserID
             
             destinationVC.kills = retrievedPlayer!.playerKills
             destinationVC.deaths = retrievedPlayer!.playerDeaths

@@ -207,21 +207,12 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="95" translatesAutoresizingMaskIntoConstraints="NO" id="6M8-xy-iJ5" userLabel="Extra Stats Stack">
                                                 <rect key="frame" x="20" y="323" width="374" height="47"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMu-xS-cK4">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QR3-16-t85">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="47"/>
-                                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="View Weapon Stats" buttonSize="large">
-                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </buttonConfiguration>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <integer key="value" value="10"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
+                                                        <buttonConfiguration key="configuration" style="filled" title="View Steam Profile" buttonSize="large"/>
                                                         <connections>
-                                                            <action selector="viewWeaponsPressed:" destination="8n8-Hj-OPp" eventType="touchUpInside" id="lo1-9S-PUB"/>
+                                                            <action selector="viewSteamProfilePressed:" destination="8n8-Hj-OPp" eventType="touchUpInside" id="Slo-xW-NqP"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>

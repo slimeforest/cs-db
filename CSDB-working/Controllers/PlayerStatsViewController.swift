@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import Kingfisher
+import SafariServices
 
 class PlayerStatsViewController: UIViewController {
     //MARK: - user info labels
@@ -15,6 +16,7 @@ class PlayerStatsViewController: UIViewController {
     var avatarURL: String = ""
     @IBOutlet weak var usernameLabel: UILabel!
     var username: String = ""
+    var userID: String = "Error loading steam ID"
     //MARK: - time played label
     @IBOutlet weak var timePlayedLabel: UILabel!
     var timePlayed: String = ""
@@ -65,9 +67,7 @@ class PlayerStatsViewController: UIViewController {
     var wlPct: String = ""
     //MARK: - actual view controller stuff
     
-    @IBAction func viewWeaponsPressed(_ sender: Any) {
-        performSegue(withIdentifier: "playerToWeapons", sender: self)
-    }
+    
     
     
     
@@ -99,6 +99,13 @@ class PlayerStatsViewController: UIViewController {
         
         roundsPlayedLabel.text = roundsPlayed
         wlPctLabel.text = wlPct
+    }
+    
+    @IBAction func viewSteamProfilePressed(_ sender: Any) {
+        if let profileURL = URL(string: "https://steamcommunity.com/profiles/\(userID)") {
+            let safariVC = SFSafariViewController(url: profileURL)
+            present(safariVC, animated: true, completion: nil)
+        }
     }
     
 }
