@@ -11,6 +11,7 @@
 import UIKit
 import Alamofire
 import SafariServices
+import SideMenu
 
 class HomeViewController: UIViewController {
     
@@ -28,9 +29,17 @@ class HomeViewController: UIViewController {
             self.performSegue(withIdentifier: "searchToStats", sender: self)
         }
     }
+    var menu: SideMenuNavigationController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        menu = SideMenuNavigationController(rootViewController: MenuListController())
+        menu?.leftSide = true
+        menu?.setNavigationBarHidden(false, animated: false)
+        
+        
+        SideMenuManager.default.leftMenuNavigationController = menu
+        SideMenuManager.default.addPanGestureToPresent(toView: self.view)
         // Do any additional setup after loading the view.
     }
     
@@ -40,7 +49,6 @@ class HomeViewController: UIViewController {
             playerRequestManager.fetchPlayerByName("\(searchedName)") { [weak self] playerObject in
                 print(playerObject.playerMoneyEarned)
                 self?.retrievedPlayer = playerObject
-//                self?.performSegue(withIdentifier: "searchToStats", sender: self)
             }
         }else if searchField.text == nil {
             print("no name entered.")
@@ -84,23 +92,56 @@ class HomeViewController: UIViewController {
             destinationVC.wlPct = retrievedPlayer!.playerWLPercentage
         }
     }
-    @IBAction func csNetPressed(_ sender: Any) {
-        print("counter-strike.net pressed")
-        if let csNetURL = URL(string: "https://store.steampowered.com/news/app/730?updates=true"){
-            
-            let safariVC = SFSafariViewController(url: csNetURL)
-            
-            present(safariVC, animated: true, completion: nil)
-        }
+    
+    @IBAction func menuPressed(_ sender: Any) {
+        present(menu!, animated: true, completion: nil)
     }
     
-    @IBAction func hltvPressed(_ sender: Any) {
-        print("HLTV button pressed")
-        if let hltvURL = URL(string: "https://www.hltv.org/ranking/teams") {
-            let safariVC = SFSafariViewController(url: hltvURL)
-            present(safariVC, animated: true, completion: nil)
-        }
-    }
+    
+    
+    
+//    @IBAction func csNetPressed(_ sender: Any) {
+//        print("counter-strike.net pressed")
+//        if let csNetURL = URL(string: "https://store.steampowered.com/news/app/730?updates=true"){
+//
+//            let safariVC = SFSafariViewController(url: csNetURL)
+//
+//            present(safariVC, animated: true, completion: nil)
+//        }
+//    }
+//
+//    @IBAction func hltvPressed(_ sender: Any) {
+//        print("HLTV button pressed")
+//        if let hltvURL = URL(string: "https://www.hltv.org/ranking/teams") {
+//            let safariVC = SFSafariViewController(url: hltvURL)
+//            present(safariVC, animated: true, completion: nil)
+//        }
+//    }
     
 }
 
+class MenuListController: UITableViewController {
+    let items: [String] = ["Latest CS:GO News", "View HTLV Team Rankings"]
+    let darkColor = UIColor(red: 21/255.0, green: 20/255.0, blue: 20/255.0, alpha: 1)
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.backgroundColor = darkColor
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = items[indexPath.row]
+        cell.backgroundColor = darkColor
+        cell.textLabel?.textColor = .white
+        return cell
+    }
+    
+}
