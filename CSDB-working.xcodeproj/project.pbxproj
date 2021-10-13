@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C327A2232716BF7000B1E4F2 /* a-astro-space-font in Resources */ = {isa = PBXBuildFile; fileRef = C327A2212716BF7000B1E4F2 /* a-astro-space-font */; };
+		C327A2242716BF7000B1E4F2 /* a-atmospheric-font in Resources */ = {isa = PBXBuildFile; fileRef = C327A2222716BF7000B1E4F2 /* a-atmospheric-font */; };
 		C36B7001270CCD3D00E641D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B7000270CCD3D00E641D5 /* AppDelegate.swift */; };
 		C36B7003270CCD3D00E641D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B7002270CCD3D00E641D5 /* SceneDelegate.swift */; };
 		C36B7005270CCD3D00E641D5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B7004270CCD3D00E641D5 /* HomeViewController.swift */; };
@@ -27,6 +29,8 @@
 		00C90AEA621EB4C741F8A0C8 /* Pods-CSDB-working.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSDB-working.debug.xcconfig"; path = "Target Support Files/Pods-CSDB-working/Pods-CSDB-working.debug.xcconfig"; sourceTree = "<group>"; };
 		9C1BE6A2B0BE83249243FE5E /* Pods-CSDB-working.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSDB-working.release.xcconfig"; path = "Target Support Files/Pods-CSDB-working/Pods-CSDB-working.release.xcconfig"; sourceTree = "<group>"; };
 		A7D912D74249CD251F02A74C /* Pods_CSDB_working.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSDB_working.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C327A2212716BF7000B1E4F2 /* a-astro-space-font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "a-astro-space-font"; sourceTree = "<group>"; };
+		C327A2222716BF7000B1E4F2 /* a-atmospheric-font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "a-atmospheric-font"; sourceTree = "<group>"; };
 		C36B6FFD270CCD3D00E641D5 /* CSDB-working.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CSDB-working.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C36B7000270CCD3D00E641D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C36B7002270CCD3D00E641D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 				C3B668AD270F786200161C21 /* Controllers */,
 				C36B7000270CCD3D00E641D5 /* AppDelegate.swift */,
 				C36B7002270CCD3D00E641D5 /* SceneDelegate.swift */,
+				C327A2212716BF7000B1E4F2 /* a-astro-space-font */,
+				C327A2222716BF7000B1E4F2 /* a-atmospheric-font */,
 				C36B7009270CCD4000E641D5 /* Assets.xcassets */,
 				C36B700E270CCD4000E641D5 /* Info.plist */,
 			);
@@ -198,7 +204,9 @@
 			files = (
 				C36B700D270CCD4000E641D5 /* LaunchScreen.storyboard in Resources */,
 				C36B700A270CCD4000E641D5 /* Assets.xcassets in Resources */,
+				C327A2232716BF7000B1E4F2 /* a-astro-space-font in Resources */,
 				C36B7008270CCD3D00E641D5 /* Main.storyboard in Resources */,
+				C327A2242716BF7000B1E4F2 /* a-atmospheric-font in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -28,15 +28,15 @@
         <scene sceneID="udg-TN-Bco">
             <objects>
                 <viewController id="JeO-dm-bSu" customClass="HomeViewController" customModule="CSDB_working" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Ms6-4v-xZz">
+                    <view key="view" contentMode="scaleToFill" id="Ms6-4v-xZz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AtG-4g-OWw" userLabel="ContentView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AtG-4g-OWw" userLabel="ContentView">
                                 <rect key="frame" x="0.0" y="44" width="414" height="1156"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sXg-Mi-eZI" userLabel="Name Stack">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="182.66666666666666"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sXg-Mi-eZI" userLabel="Name Stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="184.66666666666666"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CS:DB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PD9-Ne-QdM">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="134"/>
@@ -44,26 +44,22 @@
                                                 <color key="textColor" red="0.82352941176470584" green="0.015686274509803921" blue="0.1764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The unoffical Counter-Strike: Global Offensive stat tracker and information app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nrb-wB-rQP">
-                                                <rect key="frame" x="0.0" y="142" width="414" height="40.666666666666657"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The unoffical Counter-Strike: Global Offensive stat tracker and information app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nrb-wB-rQP">
+                                                <rect key="frame" x="0.0" y="144" width="414" height="40.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="Nrb-wB-rQP" secondAttribute="trailing" constant="40" id="6mX-pj-dNe"/>
-                                            <constraint firstItem="Nrb-wB-rQP" firstAttribute="leading" secondItem="sXg-Mi-eZI" secondAttribute="leading" constant="40" id="ECo-od-qP9"/>
-                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="tEa-Sj-nUh" userLabel="Search Stack">
-                                        <rect key="frame" x="20" y="307.66666666666669" width="374" height="149.66666666666669"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tEa-Sj-nUh" userLabel="Search Stack">
+                                        <rect key="frame" x="20" y="309.66666666666669" width="374" height="79.666666666666686"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="243" translatesAutoresizingMaskIntoConstraints="NO" id="jHw-iR-eAb" userLabel="Textfield and Button Stack">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jHw-iR-eAb" userLabel="Textfield and Button Stack">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter SteamID or CommunityURL" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="0CJ-yI-oVd">
-                                                        <rect key="frame" x="0.0" y="0.0" width="62" height="34"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="242.33333333333334" height="34"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" red="1" green="0.090196078430000007" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
@@ -71,8 +67,8 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="search"/>
                                                     </textField>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pn-l1-OtL">
-                                                        <rect key="frame" x="305" y="0.0" width="69" height="34"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pn-l1-OtL">
+                                                        <rect key="frame" x="247.33333333333329" y="0.0" width="126.66666666666666" height="34"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Search"/>
                                                         <connections>
@@ -81,25 +77,24 @@
                                                     </button>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="2pn-l1-OtL" firstAttribute="leading" secondItem="0CJ-yI-oVd" secondAttribute="trailing" constant="5" id="Ooo-ME-VpJ"/>
+                                                    <constraint firstItem="0CJ-yI-oVd" firstAttribute="leading" secondItem="jHw-iR-eAb" secondAttribute="leading" id="xaw-I6-ba7"/>
                                                 </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note: Your Steam account must be public to retrieve stats." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL0-3P-cgs">
-                                                <rect key="frame" x="0.0" y="109.00000000000001" width="374" height="40.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="39" width="374" height="40.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" systemColor="systemYellowColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="cL0-3P-cgs" firstAttribute="top" secondItem="jHw-iR-eAb" secondAttribute="bottom" constant="5" id="S9r-uG-nPG"/>
                                             <constraint firstAttribute="trailing" secondItem="jHw-iR-eAb" secondAttribute="trailing" id="T4Z-Hx-Cip"/>
                                             <constraint firstItem="jHw-iR-eAb" firstAttribute="leading" secondItem="tEa-Sj-nUh" secondAttribute="leading" id="ihn-1e-DlK"/>
                                             <constraint firstItem="cL0-3P-cgs" firstAttribute="centerX" secondItem="tEa-Sj-nUh" secondAttribute="centerX" id="uee-Zk-nGo"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SAW-KB-qlD" userLabel="Info Stack">
-                                        <rect key="frame" x="91.000000000000014" y="1110.666666666667" width="232.33333333333337" height="40.333333333333336"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SAW-KB-qlD" userLabel="Info Stack">
+                                        <rect key="frame" x="91.000000000000014" y="1110.6666666666667" width="232.33333333333337" height="40.333333333333258"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by the Tracker.gg API" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23K-Ez-Vkb">
                                                 <rect key="frame" x="0.0" y="0.0" width="232.33333333333334" height="20.333333333333332"/>
@@ -110,7 +105,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app is not affiliated with Valve" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0y-vt-QAo">
                                                 <rect key="frame" x="0.0" y="28.333333333333258" width="232.33333333333334" height="12"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -122,7 +117,6 @@
                                     <constraint firstAttribute="trailing" secondItem="sXg-Mi-eZI" secondAttribute="trailing" id="1zA-6q-wFj"/>
                                     <constraint firstAttribute="trailing" secondItem="tEa-Sj-nUh" secondAttribute="trailing" constant="20" id="KI2-ag-6wx"/>
                                     <constraint firstAttribute="bottom" secondItem="SAW-KB-qlD" secondAttribute="bottom" constant="5" id="OoX-Ae-OCV"/>
-                                    <constraint firstAttribute="height" constant="1200" id="Sec-3O-bni"/>
                                     <constraint firstItem="SAW-KB-qlD" firstAttribute="centerX" secondItem="AtG-4g-OWw" secondAttribute="centerX" id="lhf-vL-jIW"/>
                                     <constraint firstItem="tEa-Sj-nUh" firstAttribute="top" secondItem="sXg-Mi-eZI" secondAttribute="bottom" constant="125" id="sAO-V2-1oY"/>
                                     <constraint firstItem="sXg-Mi-eZI" firstAttribute="top" secondItem="AtG-4g-OWw" secondAttribute="top" id="sBR-P7-Gvx"/>
@@ -162,14 +156,14 @@
             <objects>
                 <viewController id="8n8-Hj-OPp" customClass="PlayerStatsViewController" customModule="CSDB_working" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gbl-RT-d4m">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1700"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1650"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqk-zB-JhJ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="1656"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="1606"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ir2-1U-pyf" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1700"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1650"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="d8s-4c-7LA" userLabel="Player Info Stack">
                                                 <rect key="frame" x="0.0" y="20" width="414" height="278"/>
@@ -690,7 +684,7 @@
                                             <constraint firstItem="6M8-xy-iJ5" firstAttribute="top" secondItem="d8s-4c-7LA" secondAttribute="bottom" constant="25" id="hHn-yj-ff2"/>
                                             <constraint firstItem="aFh-ql-B4F" firstAttribute="leading" secondItem="Ir2-1U-pyf" secondAttribute="leading" constant="20" id="nMa-4O-hhw"/>
                                             <constraint firstAttribute="trailing" secondItem="aFh-ql-B4F" secondAttribute="trailing" constant="20" id="qG9-wP-d1T"/>
-                                            <constraint firstAttribute="height" constant="1700" id="s8G-Ce-Ykc"/>
+                                            <constraint firstAttribute="height" constant="1650" id="s8G-Ce-Ykc"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -713,7 +707,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="k7g-RC-GKl"/>
-                    <size key="freeformSize" width="414" height="1700"/>
+                    <size key="freeformSize" width="414" height="1650"/>
                     <connections>
                         <outlet property="bombsDefusedLabel" destination="YqW-Hz-yLj" id="7U0-uh-Fh3"/>
                         <outlet property="bombsPlantedLabel" destination="uZz-gB-0Rv" id="weZ-Ec-4Ny"/>

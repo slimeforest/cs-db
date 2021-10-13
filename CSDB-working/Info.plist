@@ -21,6 +21,11 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Atmospheric-rg4aL.ttf</string>
+		<string>AstroSpace-eZ2Bg.ttf</string>
+	</array>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleDarkContent</string>
 </dict>
