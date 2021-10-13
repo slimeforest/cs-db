@@ -14,7 +14,13 @@ import SafariServices
 
 class HomeViewController: UIViewController {
     
-    @IBOutlet weak var searchField: UITextField!
+    @IBOutlet weak var searchField: UITextField! {
+        didSet{
+            let placeholderText = NSAttributedString(string: "Enter SteamID or CommunityURL", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
+            
+            searchField.attributedPlaceholder = placeholderText
+        }
+    }
     
     var playerRequestManager = PlayerRequestManager()
     var retrievedPlayer: PlayerModel! {
@@ -79,7 +85,7 @@ class HomeViewController: UIViewController {
     }
     @IBAction func csNetPressed(_ sender: Any) {
         print("counter-strike.net pressed")
-        if let csNetURL = URL(string: "https://www.counter-strike.net"){
+        if let csNetURL = URL(string: "https://store.steampowered.com/news/app/730?updates=true"){
             
             let safariVC = SFSafariViewController(url: csNetURL)
             
@@ -89,7 +95,7 @@ class HomeViewController: UIViewController {
     
     @IBAction func hltvPressed(_ sender: Any) {
         print("HLTV button pressed")
-        if let hltvURL = URL(string: "https://www.hltv.org") {
+        if let hltvURL = URL(string: "https://www.hltv.org/ranking/teams") {
             let safariVC = SFSafariViewController(url: hltvURL)
             present(safariVC, animated: true, completion: nil)
         }
