@@ -14,7 +14,7 @@ class PlayerRequestManager {
     
     func fetchPlayerByName(_ playerName: String, with completionBlock: @escaping (PlayerModel) -> ()) {
         let headers : HTTPHeaders = [
-            "TRN-Api-Key": "",
+            "TRN-Api-Key": "b0468418-bdf3-4656-b9c5-9afe21e943d6",
             "Accept": "application/json",
             "Accept-Encoding": "gzip"
         ]
